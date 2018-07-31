@@ -1,6 +1,6 @@
 Import-Module ActiveDirectory -ErrorAction "Stop"
 
-$MyUsername = "Visitor"
+$MyUsername = $env:username
 
 $dir = (Get-AdUser $MyUsername -properties * -Server DC01.server.local).HomeDirectory
 
