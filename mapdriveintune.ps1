@@ -9,4 +9,4 @@ $dir = $dir.replace('\home', '.server.local\home')
 
 
 
-Net use L: $dir /user:$MyUsername 
+Net use H: $dir /user:$MyUsername 
